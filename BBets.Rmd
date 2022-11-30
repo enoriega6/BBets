@@ -63,7 +63,9 @@ print(mean(varstore))
 hist(varstore)
 
 ```
-
+  
+  
+  So two to one odds on average, Dr. J makes 22 bucks a class. 
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 

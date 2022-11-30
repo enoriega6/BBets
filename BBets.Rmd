@@ -53,7 +53,7 @@ numClass=35
 odds=2
 countoDo=50
 varstore=numeric()
-for(i in 1:100){
+for(i in 1:637){
 brownlow <-BrLw(numClass,odds,countoDo)
 varstore[i]=brownlow}
 print(mean(varstore))
@@ -65,15 +65,27 @@ hist(varstore)
 ```
 
 
-
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
+```{r}
+numClass=29
+odds=2
+countoDo=50
+varstore=numeric()
+for(i in 1:637){
+brownlow <-BrLw(numClass,odds,countoDo)
+varstore[i]=brownlow}
+print(mean(varstore))
+```
 
+```{r}
+hist(varstore)
 
+```
 
-
+From the histogram, it's apparent that for the two to one odds to be fair, we need about 29 people in the class. With more than 29 people, the good Doctor is taking advantage of students.
 
 
 

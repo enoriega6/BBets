@@ -89,9 +89,26 @@ hist(varstore)
 
 From the histogram, it's apparent that for the two to one odds to be fair, we need about 29 people in the class. With more than 29 people, the good Doctor is taking advantage of students.
 
+```{r}
+numClass=35
+odds=4.25
+countoDo=50
+varstore=numeric()
+for(i in 1:637){
+brownlow <-BrLw(numClass,odds,countoDo)
+varstore[i]=brownlow}
+print(mean(varstore))
+```
 
+```{r}
+hist(varstore)
+
+```
+
+For a class size of 35 students the payout would be about $0.71 per class with the odds of 4.25 to 1.  
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
 
